@@ -8,6 +8,10 @@ const reducer = (state, action) => {
 };
 
 function App() {
+  {
+    /* We shuld not have staet in App component, we can have Wallet, Transaction components for the below use cases.*/
+  }
+
   const initialState = { money: 100 };
   const [state, dispatch] = useReducer(reducer, initialState);
   const [amount, setAmount] = useState(0);
